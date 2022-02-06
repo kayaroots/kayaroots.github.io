@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="contact.css" rel="stylesheet" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+  </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <link href="./style.css" rel="stylesheet" />
+  <title>Contact</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="./index.html">❖ Home</a></li>
+      <li><a href="./about.html"></i> About </a></li>
+      <li><a href="./contact.html">Contact Me <i class="fas fa-paper-plane fa-xs"></i></a></li>
+    </ul>
+  </nav>
+  <section id="contact" class="contact card">
+    <h1>Contact</h1>
+    <p>Please fill the next form if you want to contact me.</p>
+    <form id="form">
+      <fieldset>
+        <legend>Your contact information</legend>
+        <label for="name"> Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your First Name" required onkeyup="isEmpty()" />
+        <label for="lastName"> Last Name: </label>
+        <input type="text" id="lastName" name="lastName" placeholder="Your Last Name" />
+        <label for="phone">Phone Number: </label>
+        <input type="tel" id="phone" name="phone" placeholder="+XXX XX XXX XXXX" required onkeyup="isEmpty()" />
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Your Email Adress" required onkeyup="isEmpty()"/>
+        <h6>How may I help you:</h6>
+        <select id="list" onchange ="getSelectValue();" >
+          <option value=Web-Desing> Web Desing </option> 
+          <option value=“Data-Analist”> Data Analist </option> 
+          <option value=“Job-Oportunity”> Job Oportunity </option> 
+          <option value=“Be-Friends”> Just to connect </option> 
+        </select></label>
+        <br />
+        <label for="comment"> Comments: </label>
+        <textarea id="comment" name="comment" required onkeyup="isEmpty()"> </textarea>
+      </fieldset>
+      <button disabled id='submit' type="submit">Send</button>
+    </form>
+  </section>
+  <section class="footer">
+    <div>
+        <ul class="list">
+          <li>
+            <a href="./index.html">❖ Home</a>
+          </li>
+          <li>
+            <a href="./about.html"></i> About </a>
+          <li>
+            <a href="./contact.html">Contact Me <i class="fas fa-paper-plane fa-xs"></i></a>
+          <li>
+        </ul>
+        <p class="copyright">&#169; Israel Tech Challenge</p>
+    <div>
+    <div class="social">
+      <a href="https://github.com/kayaroots" target="“_blank”"><i class="fab fa-github"></i></a>
+      <a href="http://www.linkedin.com/in/hbehar" target="“_blank”"><i class="fab fa-linkedin"></i></a>
+      <a href="https://stackoverflow.com/users/17930875/haim-behar" target="“_blank”"><i class="fab fa-stack-overflow"></i></a>
+      
+    </div>
+  </section>
+<script src="./js/form.js"></script>
+<script src="./js/footer.js"></script>
+</body>
+
+</html>
